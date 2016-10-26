@@ -5,3 +5,4 @@ r8mat_expm1.cpp
 r8mat_expm1.h
 test.cpp
 *.out
+2.out.dSYM/

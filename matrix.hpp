@@ -18,6 +18,7 @@ class Matrix {
     Matrix& operator*=(const Matrix&);
     Matrix operator*(const Matrix&);
     Matrix operator/(const unsigned int) const;
+    Matrix operator-(const Matrix&) const;
 
     double frobenius_norm() const;
     void identity();

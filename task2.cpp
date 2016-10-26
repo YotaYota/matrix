@@ -22,7 +22,10 @@ Matrix eexp(Matrix A, double tol = 1e-10) {
 }
 
 int main() {
-  Matrix A = Matrix(2);
+  int dim;
+  cout << "Enter matrix dimension: " << flush;
+  cin >> dim;
+  Matrix A = Matrix(dim);
   cout << " Enter elements (column major): " << endl;
   A.fill_matrix();
   cout << " Matrix A: " << endl;
@@ -40,5 +43,9 @@ int main() {
   double norm_A_mat = exp_A_mat.frobenius_norm();
   cout << " norm e^A | norm e^A matlab  <-> ";
   cout << norm_A << " | " << norm_A_mat << endl;
+
+  Matrix diff = exp_A - exp_A_mat;
+  cout << " e^A - e^A matlab: " << endl;
+  diff.print_matrix();
 }
 

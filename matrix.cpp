@@ -89,6 +89,14 @@ Matrix Matrix::operator/(const unsigned int denom) const {
   return B;
 }
 
+Matrix Matrix::operator-(const Matrix& B) const {
+  Matrix C = Matrix(n);
+  for (int k = 0; k < n*n; k++) {
+    C.A[k] = A[k] - B.A[k];
+  }
+  return C;
+}
+
 // Functions
 
 double Matrix::frobenius_norm() const {
