@@ -4,3 +4,4 @@ r8lib.h
 r8mat_expm1.cpp
 r8mat_expm1.h
 test.cpp
+*.out

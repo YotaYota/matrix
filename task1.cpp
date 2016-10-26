@@ -10,7 +10,7 @@ double eexp(double x, double tol = 1e-10) {
   double sum;
   term = 1.0;
   sum = 1.0;
-  for (int n = 1; term > tol; n++) {
+  for (int n = 1; fabs(term) > tol; n++) {
     term *= x/n;
     sum += term;
   }
