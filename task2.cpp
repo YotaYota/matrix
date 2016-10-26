@@ -1,6 +1,7 @@
 using namespace std;
 
 #include <iostream>
+#include <cmath>
 #include "r8lib.h"
 #include "r8mat_expm1.h"
 #include "matrix.hpp"
@@ -43,6 +44,8 @@ int main() {
   double norm_A_mat = exp_A_mat.frobenius_norm();
   cout << " norm e^A | norm e^A matlab  <-> ";
   cout << norm_A << " | " << norm_A_mat << endl;
+  cout << " |norm e^A - norm e^A matlab| = ";
+  cout << fabs(norm_A - norm_A_mat) << endl << endl;
 
   Matrix diff = exp_A - exp_A_mat;
   cout << " e^A - e^A matlab: " << endl;

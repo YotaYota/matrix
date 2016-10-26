@@ -53,7 +53,6 @@ Matrix& Matrix::operator+=(const Matrix& B) {
   return *this;
 }
 
-// TODO: VERY deep iteration... Use get_* and dot_prod
 Matrix Matrix::operator*(const Matrix& B) {
   Matrix C = Matrix(n);
   for (int col = 0; col < n; col++) {
