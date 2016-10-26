@@ -1,5 +1,3 @@
-// Author: Johannes Jeppsson
-
 #include <cmath>
 #include <iostream>
 

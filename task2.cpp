@@ -1,5 +1,3 @@
-// Author: Johannes Jeppsson
-
 using namespace std;
 
 #include <iostream>

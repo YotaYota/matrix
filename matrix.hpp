@@ -1,5 +1,4 @@
 // matrix.hpp
-// Author: Johannes Jeppsson
 
 #ifndef MATRIX_HPP
 #define MATRIX_HPP

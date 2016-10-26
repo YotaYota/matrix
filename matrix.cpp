@@ -2,7 +2,6 @@
 //
 // Class of square matrix with elements ordered according to "column major".
 //
-// Author: Johannes Jeppsson
 
 #include <cmath>
 #include <iostream>
