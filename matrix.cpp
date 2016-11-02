@@ -53,7 +53,7 @@ Matrix& Matrix::operator+=(const Matrix& B) {
   return *this;
 }
 
-Matrix Matrix::operator*(const Matrix& B) {
+Matrix Matrix::operator*(const Matrix& B) const {
   Matrix C = Matrix(n);
   for (int col = 0; col < n; col++) {
     for (int row = 0; row < n; row++) {

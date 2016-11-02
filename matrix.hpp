@@ -16,7 +16,7 @@ class Matrix {
     Matrix& operator=(const Matrix&);
     Matrix& operator+=(const Matrix&);
     Matrix& operator*=(const Matrix&);
-    Matrix operator*(const Matrix&);
+    Matrix operator*(const Matrix&) const;
     Matrix operator/(const unsigned int) const;
     Matrix operator-(const Matrix&) const;
 
